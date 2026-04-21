@@ -1,12 +1,10 @@
-# 🔩 Screw Finder (비전 나사 검출기)
+# 🔩 Screw Finder 
 
-### 비전 기반 나사 검출 및 위치 분석 시스템
+### YOLO26n 기반 나사 검출·위치 분석 비전 시스템
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ff39b7da-bcd8-4552-b770-9c429af549c2" width="650"/>
 </p>
-
-> **입력 이미지에서 나사를 검출하고, 위치·신뢰도·세그멘테이션 결과를 시각화하는 Windows 기반 비전 검사 도구**
 
 ---
 
@@ -14,13 +12,11 @@
 
 | 항목 | 내용 |
 |------|------|
-| **프로젝트명** | Screw Finder |
-| **개발 기간** | 2025.03 ~ 2025.04 |
-| **프로젝트 유형** | 컴퓨터 비전 / Windows 애플리케이션 / 검사 도구 |
-| **개발 인원** | 1명 |
-| **역할** | 비전 처리 로직 구현, ONNX 모델 연동, MFC UI 개발 |
-| **기술 스택** | C++, OpenCV, ONNX Runtime, MFC |
-| **핵심 성과** | 나사 검출 결과를 시각화하고, 좌표 및 신뢰도 정보를 CSV·이미지·ZIP 형태로 저장할 수 있는 검사 프로그램 구현 |
+| **기간** | 2026.02 ~ 2026.04 |
+| **작업 인원** | 2명 |
+| **역할** | 비전 기술 구현 |
+| **기술 스택** | C++, OpenCV, MFC, ONNX |
+| **성과** | ONNX을 활용해 나사 검출, 위치 분석, 세그멘테이션 시각화, 결과 저장까지 지원하는 통합 검사 시스템 구현 |
 
 ---
 
@@ -51,6 +47,13 @@
 ---
 
 ## 3. 시스템 아키텍처
+
+### 데이터 수집 및 학습
+- Kaggle, Ultralytics 등 다양한 소스에서 나사 헤드 이미지 수집
+- 수집한 데이터에 대해 직접 레이블링 수행
+- Ultralytics 플랫폼에서 **YOLO26n 모델** 학습 진행
+
+데이터셋: https://platform.ultralytics.com/wonjin-kim/datasets/screw-head-2
 
 ### Vision Engine (C++)
 - ONNX Runtime 기반 모델 로드 및 추론 수행
