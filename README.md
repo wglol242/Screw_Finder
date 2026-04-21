@@ -1,9 +1,9 @@
-# 🔩 Screw Finder
+# 🔩 Screw Finder (비전 나사 검출기)
 
-### ONNX 기반 나사 검출 및 위치 분석을 수행하는 MFC 비전 애플리케이션
+### 비전 기반 나사 검출 및 위치 분석 시스템
 
 <p align="center">
-  <img src="대표이미지링크" width="700"/>
+  <img src="https://github.com/user-attachments/assets/ff39b7da-bcd8-4552-b770-9c429af549c2" width="650"/>
 </p>
 
 > **이미지에서 나사를 검출하고, 위치·신뢰도·분할 결과를 시각화하는 Windows 기반 비전 도구**
@@ -100,8 +100,10 @@
 
 ### 결과 화면
 <p align="center">
-  <img src="결과화면이미지링크" width="700"/>
+  <img src="https://github.com/user-attachments/assets/791631fc-a63f-4e87-a89c-bb742cf7b884" width="650"/>
 </p>
+
+<div align="center">
 
 ### 선택 나사 상세 표시
 <p align="center">
